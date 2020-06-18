@@ -38,7 +38,6 @@ def launchApp(messageID):
 
             for i, element in enumerate(json_response):
                 if int(element['id']) > messageID:
-                    print(element)
                     launchWebBot()
                     running = False
             sys.exit()
